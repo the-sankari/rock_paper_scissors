@@ -20,6 +20,7 @@ body {
 
 .move-icon {
   height: 50px;
+  border-radius: 100px;
   background-color: transparent;
 }
 
