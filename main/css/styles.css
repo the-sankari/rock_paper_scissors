@@ -59,8 +59,8 @@ body {
   margin-bottom: 30px;
 }
 
-.reset-score-btn {
-  background-color: #12451a;
+.reset-score-btn, .auto-play {
+  background-color: #b9c5bb;
   color: #111;
   border-radius: 6px;
   border: none;
@@ -74,6 +74,12 @@ body {
 .reset-score-btn:hover {
   background-color: #410707;
   color: #fff;
+}
+
+.auto-play:hover{
+  background-color: #07413f;
+  color: #fff;
+
 }
 
 @media screen and (max-width: 360px) {

@@ -9,58 +9,66 @@
 
   <body>
     <div class="container">
-
-    <main>
-
-    <p class="title">Rock Paper Scrissors</p>
-    <div class="btn-container">
-
-    <button
-      onclick="
+      <main>
+        <p class="title">Rock Paper Scrissors</p>
+        <div class="btn-container">
+          <button
+            onclick="
  playGames('rock');
     "
-      class="move-btn"
-    >
-      <img src="./main/img/rock-emoji.png" alt="rock" class="move-icon" />
-    </button>
-    <button
-      onclick="
+            class="move-btn"
+          >
+            <img src="./main/img/rock-emoji.png" alt="rock" class="move-icon" />
+          </button>
+          <button
+            onclick="
 playGames('paper')
 
     "
-      class="move-btn"
-    >
-      <img src="./main/img/paper-emoji.png" alt="paper" class="move-icon" />
-    </button>
-    <button
-      onclick="
+            class="move-btn"
+          >
+            <img
+              src="./main/img/paper-emoji.png"
+              alt="paper"
+              class="move-icon"
+            />
+          </button>
+          <button
+            onclick="
 playGames('scissors')
 
     "
-      class="move-btn"
-    >
-      <img src="./main/img/scissors-emoji.png" alt="scissors" class="move-icon" />
-    </button>
-  </div>
+            class="move-btn"
+          >
+            <img
+              src="./main/img/scissors-emoji.png"
+              alt="scissors"
+              class="move-icon"
+            />
+          </button>
+        </div>
 
-    <p class="js-result result">Let's Play</p>
-    <p class="js-moves">
-      You <img src="./main/img/paper-emoji.png" alt="rock" class="move-icon">
-    <img src="./main/img/paper-emoji.png" alt="" class="move-icon">
-     Comp
-    </p>
-    <p class="js-score score">Score</p>
-    <button
-      class="reset-score-btn"
-      onclick="
+        <p class="js-result result">Let's Play</p>
+        <p class="js-moves">
+          You
+          <img src="./main/img/paper-emoji.png" alt="rock" class="move-icon" />
+          <img src="./main/img/paper-emoji.png" alt="" class="move-icon" />
+          Comp
+        </p>
+        <p class="js-score score">Score</p>
+        <button
+          class="reset-score-btn"
+          onclick="
     resetScore()
     "
-    >
-      Reset Score
-    </button>
-  </main>
-</div>
-
+        >
+          Reset Score
+        </button>
+        <button class="auto-play" onclick="
+        autoPlay();
+        " >Auto Play</button>
+      </main>
+    </div>
 
     <script src="./main/js/srcipts.js"></script>
   </body>
