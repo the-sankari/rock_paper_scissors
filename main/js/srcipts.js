@@ -44,6 +44,15 @@ scissorsBtn.addEventListener('click', ()=>{
     playGames('scissors');
 });
 
+document.body.addEventListener('keydown', (event)=>{
+    if (event.key === 'r') {
+        playGames('rock');
+    } else if(event.key === 'p') {
+        playGames('paper');
+    }else if (event.key === 's') {
+        playGames('scissors')
+    }
+})
 
 function playGames(playerMove) {
     const computerMove = pickComputerMove();
