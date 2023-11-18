@@ -7,20 +7,43 @@ updateScoreElement();
 
 let isAutoPlaying = false;
 let intervalId;
+
+// const autoPlay = () =>{
+
+// }
+
 function autoPlay() {
     if (!isAutoPlaying) {
-        
-     intervalId = setInterval(function () {
+
+        intervalId = setInterval(() => {
             const playerMove = pickComputerMove();
             playGames(playerMove);
         }, 1000);
         isAutoPlaying = true;
-    }else{
+    } else {
         clearInterval(intervalId);
         isAutoPlaying = false;
     }
 
 }
+
+const rockBtn = document.querySelector('.js-rock-btn');
+
+rockBtn.addEventListener('click', ()=>{
+    playGames('rock');
+});
+
+const paperBtn = document.querySelector('.js-paper-btn');
+paperBtn.addEventListener('click', ()=>{
+    playGames('paper');
+});
+
+const scissorsBtn = document.querySelector('.js-scissors-btn');
+
+scissorsBtn.addEventListener('click', ()=>{
+    playGames('scissors');
+});
+
 
 function playGames(playerMove) {
     const computerMove = pickComputerMove();
